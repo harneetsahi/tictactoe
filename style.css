@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  background-color: rgba(233, 231, 231, 0.423);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.start-game {
+  display: flex;
+  flex-direction: column;
+}
+
+.players input {
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.213);
+  letter-spacing: 1.1px;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.game-board {
+  display: grid;
+  place-content: center;
+  width: 350px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.6rem;
+  display: none;
+}
+
+.box {
+  height: 110px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(63, 157, 29, 0.961);
+  font-size: 2.5rem;
+  color: white;
+}
+
+.box:hover {
+  background-color: rgba(63, 157, 29, 0.761);
+  cursor: pointer;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 1rem 1.3rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(184, 92, 1);
+  color: white;
+  letter-spacing: 1.7px;
+}
+
+.btn:hover {
+  background-color: rgba(159, 80, 0, 0.824);
+  cursor: pointer;
+}
+
+.new-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.new-btn {
+  display: none;
+}
+
+.message {
+  font-size: 1.6rem;
+  letter-spacing: 1.3px;
+  color: rgb(60, 59, 59);
+}
+
+.reset-btn {
+  display: none;
+}
+
+.winning-img {
+  display: none;
+  height: 300px;
+}
+
+.playing-person {
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-size: 1.2rem;
+  color: rgb(80, 76, 76);
+  padding: 0.8rem 0 0.4rem 0;
+  text-transform: capitalize;
+}
